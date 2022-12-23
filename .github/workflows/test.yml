@@ -18,6 +18,6 @@ jobs:
       uses: actions/setup-input@v3
     - run: npm install -g bats
     - run: bats -v
-    - run: echo  "힘내 오늘도!"
+    - run: echo "힘내 오늘도!"
     - run: echo "나는 ${github.actor}야!"
     - run: "${github.event}"
