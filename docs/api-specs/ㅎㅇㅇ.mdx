@@ -1,23 +1,43 @@
-<p>sadfasdf</p><ul><li><p>하이요</p></li></ul><ol><li><p>아안녕</p></li></ol><p></p><pre><code class="language-typescript">export default function Providers({ children }: { children: React.ReactNode }) {
-  const [queryClient] = useState(() =&gt; new QueryClient());
+sadfasdf
+
+
+* 
+하이요
+
+
+
+* 
+아안녕
+
+
+
+
+```typescript
+export default function Providers({ children }: { children: React.ReactNode }) {
+  const [queryClient] = useState(() => new QueryClient());
 
   return (
-    &lt;SessionProvider&gt;
-      &lt;QueryClientProvider client={queryClient}&gt;
+    
+      
         {children}
-        &lt;ReactQueryDevtools initialIsOpen={false} /&gt;
-      &lt;/QueryClientProvider&gt;
-    &lt;/SessionProvider&gt;
+        
+      
+    
   );
-}</code></pre><pre><code class="language-javascript">export default function Providers({ children }: { children: React.ReactNode }) {
-  const [queryClient] = useState(() =&gt; new QueryClient());
+}
+```
+
+```typescript
+export default function Providers({ children }: { children: React.ReactNode }) {
+  const [queryClient] = useState(() => new QueryClient());
 
   return (
-    &lt;SessionProvider&gt;
-      &lt;QueryClientProvider client={queryClient}&gt;
+    
+      
         {children}
-        &lt;ReactQueryDevtools initialIsOpen={false} /&gt;
-      &lt;/QueryClientProvider&gt;
-    &lt;/SessionProvider&gt;
+        
+      
+    
   );
-}</code></pre><p></p>
+}
+```
