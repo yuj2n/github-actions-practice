@@ -17,12 +17,12 @@ export default function Providers({ children }: { children: React.ReactNode }) {
   const [queryClient] = useState(() => new QueryClient());
 
   return (
-    
-      
+    <SessionProvider>
+      <QueryClientProvider client={queryClient}>
         {children}
-        
-      
-    
+        <ReactQueryDevtools initialIsOpen={false} />
+      </QueryClientProvider>
+    </SessionProvider>
   );
 }
 ```
@@ -32,12 +32,12 @@ export default function Providers({ children }: { children: React.ReactNode }) {
   const [queryClient] = useState(() => new QueryClient());
 
   return (
-    
-      
+    <SessionProvider>
+      <QueryClientProvider client={queryClient}>
         {children}
-        
-      
-    
+        <ReactQueryDevtools initialIsOpen={false} />
+      </QueryClientProvider>
+    </SessionProvider>
   );
 }
 ```
