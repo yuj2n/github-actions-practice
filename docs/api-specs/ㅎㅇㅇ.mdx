@@ -9,4 +9,15 @@
       &lt;/QueryClientProvider&gt;
     &lt;/SessionProvider&gt;
   );
-}</code></pre><p></p><p></p>
+}</code></pre><pre><code class="language-javascript">export default function Providers({ children }: { children: React.ReactNode }) {
+  const [queryClient] = useState(() =&gt; new QueryClient());
+
+  return (
+    &lt;SessionProvider&gt;
+      &lt;QueryClientProvider client={queryClient}&gt;
+        {children}
+        &lt;ReactQueryDevtools initialIsOpen={false} /&gt;
+      &lt;/QueryClientProvider&gt;
+    &lt;/SessionProvider&gt;
+  );
+}</code></pre><p></p>
