@@ -1,27 +1,21 @@
-# 🚀 API 명세서: [기능 이름]
+# 🚀 API 명세서: ㅂㅈㄷㄱ
 
-    
 ## 📌 Endpoint
 
-    
-      
-* **URL:** `/api/v1/resource`
-      
-* **Method:** `GET`
-    
-    
+* 
+**URL:** `/api/v1/resource`
+
+* 
+**Method:** `GET`
+
 ## 📥 Request Parameters
 
-    
-| 이름 | 타입 | 설명 |
-| --- | --- | --- |
+|  |
 | id | string | 유저 식별자 |
 
 
-    
 ## 📤 Response Example
 
-    
 
 
 ```typescript
